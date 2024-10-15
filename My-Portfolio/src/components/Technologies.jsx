@@ -1,0 +1,319 @@
+import React from 'react'
+
+//Game Engines
+import { FaUnity } from "react-icons/fa6";
+import { SiUnrealengine } from "react-icons/si";
+import { SiGodotengine } from "react-icons/si";
+
+//Languages
+import { SiCsharp } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
+import { SiDotnet } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { BiLogoPhp } from "react-icons/bi";
+
+//Graphics
+import { SiOpengl } from "react-icons/si";
+
+//Web & Database
+import { RiReactjsLine} from 'react-icons/ri'
+import { DiNodejs } from "react-icons/di";
+import { SiMongodb } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { TbBrandThreejs } from "react-icons/tb";
+import { RiTailwindCssFill } from "react-icons/ri";
+
+//Version Controlling
+import { FaBitbucket } from "react-icons/fa";
+import { FaGit } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
+//Tools
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeillustrator } from "react-icons/si";
+import { SiAdobepremierepro } from "react-icons/si";
+import { SiBlender } from "react-icons/si";
+import { SiAutodeskmaya } from "react-icons/si";
+import { SiAudacity } from "react-icons/si";
+import { CgFigma } from "react-icons/cg";
+import { RiFlutterFill } from "react-icons/ri";
+import { SiJira } from "react-icons/si";
+import { RiNotionFill } from "react-icons/ri";
+import { FaTrello } from "react-icons/fa";
+
+
+import { motion } from 'framer-motion'
+
+const iconVariants = (duration) => ({
+  initial: {y: -10},
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    }
+  }
+})
+
+function Technologies() {
+  return (
+    <div className='pb-24'>
+      <h1 className="text-black font-bold my-20 text-center text-4xl">Technologies</h1>
+      <h2 className="my-8 text-center text-2xl">Programming</h2>
+      <div className="flex flex-wrap items-center justify-center gap-4"> 
+      <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaPython className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiCsharp   className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiCplusplus   className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiDotnet className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiJavascript className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <BiLogoPhp  className='text-3xl text-cyan-400' />
+        </motion.div>
+      </div>
+
+      <h2 className="my-8 text-center text-2xl">Game Engines</h2>
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div 
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaUnity className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiUnrealengine className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiGodotengine className='text-3xl text-cyan-400' />
+        </motion.div>
+        </div>
+        
+      <h2 className="my-8 text-center text-2xl">Graphics</h2>
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiOpengl  className='text-3xl text-cyan-400' />
+        </motion.div>
+      </div>
+
+      <h2 className="my-8 text-center text-2xl">Web & Database</h2>
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <RiReactjsLine className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <DiNodejs className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiMongodb className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <TbSql  className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaHtml5  className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaCss3Alt className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <TbBrandThreejs className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <RiTailwindCssFill className='text-3xl text-cyan-400' />
+        </motion.div>
+      </div>
+
+      <h2 className="my-8 text-center text-2xl">Version Controlling</h2>
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaGit  className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaGithub  className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaBitbucket className='text-3xl text-cyan-400' />
+        </motion.div>
+      </div>
+
+      <h2 className="my-8 text-center text-2xl">Tools</h2>
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAdobephotoshop  className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAdobeillustrator  className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAdobepremierepro className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiBlender className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAutodeskmaya className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAudacity className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <CgFigma className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <RiFlutterFill className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiJira className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <RiNotionFill className='text-3xl text-cyan-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaTrello className='text-3xl text-cyan-400' />
+        </motion.div>
+      </div>
+
+    </div>
+  )
+}
+
+export default Technologies
