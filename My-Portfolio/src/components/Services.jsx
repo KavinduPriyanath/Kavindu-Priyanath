@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 function Services({togglePopup}) {
   return (
     <div>
-      <div className="pb-4">
+      <div className="pb-4 mt-40">
         <h1 className='mb-10 text-center text-4xl'>
           <span className="text-6xl text-neutral-500 leading-none">“</span>
           From concept to completion, I deliver immersive, engaging, and impactful gaming experiences tailored to your needs. Let’s create something extraordinary together.”</h1>

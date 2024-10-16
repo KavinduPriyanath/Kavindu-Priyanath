@@ -11,6 +11,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import PongGame from './components/PongGame';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path='/' element={<Home togglePopup={togglePopup}/>} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/services' element={<Services togglePopup={togglePopup} />} />
+            <Route path='/game' element={<PongGame />} />
           </Routes>
         
         </BrowserRouter>
