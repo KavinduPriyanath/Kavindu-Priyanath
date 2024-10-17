@@ -14,7 +14,7 @@ import GameQA from "../assets/services/GameQA.jpeg"
 //import game icons
 import Meta11 from "../assets/games/Meta11.png"
 import Algorithmia from "../assets/games/Algorithmia.png"
-import InkWorld from "../assets/games/InkWorld.png"
+import InkWorld from "../assets/games/Inkworld.png"
 import DexesTrials from "../assets/games/DexesTrials.png"
 import MineCantCraft from "../assets/games/MineCantCraft.png"
 import EverySnake from "../assets/games/EverySnake.png"
