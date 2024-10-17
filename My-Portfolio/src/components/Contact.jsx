@@ -34,50 +34,50 @@ function Contact({ isOpen, onClose, onEmailSent }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+      <div className="bg-sky-50 p-8 rounded-lg shadow-lg max-w-md w-full">
         
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-bold mb-6 text-black">Let's Talk!!!</h2>
         <form ref={form} onSubmit={sendEmail}>
         
         {/* Name */}
           <div className="mb-4">
-            <label htmlFor="from_name" className="block text-gray-700">Name</label>
+            <label htmlFor="from_name" className="block text-gray-700 font-bold">Name</label>
             <input 
               type="text" 
               name="from_name" 
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
+              className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               required
             />
           </div>        
 
           {/* Email */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-gray-700">Email</label>
+            <label htmlFor="email" className="block text-gray-700 font-bold">Email</label>
             <input 
               type="email" 
               name="from_email" 
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
+              className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               required
             />
           </div>
 
           {/* Subject */}
           <div className="mb-4">
-            <label htmlFor="subject" className="block text-gray-700">Subject</label>
+            <label htmlFor="subject" className="block text-gray-700 font-bold">Subject</label>
             <input 
               type="text" 
               name="subject" 
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
+              className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               required
             />
           </div>
 
           {/* Content */}
           <div className="mb-4">
-            <label htmlFor="content" className="block text-gray-700">Content</label>
+            <label htmlFor="content" className="block text-gray-700 font-bold">Content</label>
             <textarea 
               name="message" 
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
+              className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               rows="4"
               required
             />

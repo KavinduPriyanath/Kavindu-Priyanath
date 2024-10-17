@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Technologies from './components/Technologies'
@@ -12,6 +12,8 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import PongGame from './components/PongGame';
+import TwoDView from './components/2dView/TwoDView';
+import Tictactoe from './components/Games/TikTakToe/Tictactoe';
 
 
 function App() {
@@ -45,7 +47,6 @@ function App() {
             <Route path='/' element={<Home togglePopup={togglePopup}/>} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/services' element={<Services togglePopup={togglePopup} />} />
-            <Route path='/game' element={<PongGame />} />
           </Routes>
         
         </BrowserRouter>

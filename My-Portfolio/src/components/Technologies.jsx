@@ -64,149 +64,169 @@ function Technologies() {
   return (
     <div className='pb-24'>
       <h1 className="text-black font-bold my-20 text-center text-4xl">Technologies</h1>
-      <h2 className="my-8 text-center text-2xl">Programming</h2>
+      <motion.h2
+        variants={iconVariants(4.5)}
+        initial="initial"
+        animate="animate" 
+        className="mt-8 mb-4 text-center text-2xl text-blue-700 font-bold">Programming</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4"> 
       <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaPython className='text-3xl text-cyan-400' />
+            <FaPython className='text-3xl text-blue-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiCsharp   className='text-3xl text-cyan-400' />
+            <SiCsharp className='text-3xl text-blue-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiCplusplus   className='text-3xl text-cyan-400' />
+            <SiCplusplus   className='text-3xl text-blue-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiDotnet className='text-3xl text-cyan-400' />
+            <SiDotnet className='text-3xl text-blue-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiJavascript className='text-3xl text-cyan-400' />
+            <SiJavascript className='text-3xl text-blue-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <BiLogoPhp  className='text-3xl text-cyan-400' />
+            <BiLogoPhp  className='text-3xl text-blue-700' />
         </motion.div>
       </div>
 
-      <h2 className="my-8 text-center text-2xl">Game Engines</h2>
+      <motion.h2
+        variants={iconVariants(4.5)}
+        initial="initial"
+        animate="animate" 
+        className="mt-8 mb-4 text-center text-2xl text-purple-500 font-bold">Game Engines</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div 
-          variants={iconVariants(2.5)}
+          variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaUnity className='text-3xl text-cyan-400' />
-        </motion.div>
-        <motion.div 
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiUnrealengine className='text-3xl text-cyan-400' />
+            <FaUnity className='text-3xl text-purple-400' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiGodotengine className='text-3xl text-cyan-400' />
+            <SiUnrealengine className='text-3xl text-purple-400' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiGodotengine className='text-3xl text-purple-400' />
         </motion.div>
         </div>
         
-      <h2 className="my-8 text-center text-2xl">Graphics</h2>
+      <motion.h2 
+        variants={iconVariants(4.5)}
+        initial="initial"
+        animate="animate"
+        className="mt-8 mb-4 text-center text-2xl text-sky-700 font-bold">Graphics</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiOpengl  className='text-3xl text-cyan-400' />
+            <SiOpengl  className='text-3xl text-sky-700' />
         </motion.div>
       </div>
 
-      <h2 className="my-8 text-center text-2xl">Web & Database</h2>
+      <motion.h2 
+        variants={iconVariants(4.5)}
+        initial="initial"
+        animate="animate"
+        className="mt-8 mb-4 text-center text-2xl text-green-700 font-bold">Web & Database</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <RiReactjsLine className='text-3xl text-cyan-400' />
+            <RiReactjsLine className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiNodejs className='text-3xl text-cyan-400' />
+            <DiNodejs className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiMongodb className='text-3xl text-cyan-400' />
+            <SiMongodb className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <TbSql  className='text-3xl text-cyan-400' />
+            <TbSql  className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaHtml5  className='text-3xl text-cyan-400' />
+            <FaHtml5  className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaCss3Alt className='text-3xl text-cyan-400' />
+            <FaCss3Alt className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <TbBrandThreejs className='text-3xl text-cyan-400' />
+            <TbBrandThreejs className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <RiTailwindCssFill className='text-3xl text-cyan-400' />
+            <RiTailwindCssFill className='text-3xl text-green-700' />
         </motion.div>
       </div>
 
-      <h2 className="my-8 text-center text-2xl">Version Controlling</h2>
+      <motion.h2
+        variants={iconVariants(4.5)}
+        initial="initial"
+        animate="animate" 
+        className="mt-8 mb-4 text-center text-2xl text-cyan-400 font-bold">Version Controlling</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div 
           variants={iconVariants(4.5)}
@@ -231,84 +251,88 @@ function Technologies() {
         </motion.div>
       </div>
 
-      <h2 className="my-8 text-center text-2xl">Tools</h2>
+      <motion.h2
+        variants={iconVariants(4.5)}
+        initial="initial"
+        animate="animate" 
+        className="mt-8 mb-4 text-center text-2xl text-red-700 font-bold">Tools</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiAdobephotoshop  className='text-3xl text-cyan-400' />
+            <SiAdobephotoshop  className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiAdobeillustrator  className='text-3xl text-cyan-400' />
+            <SiAdobeillustrator  className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiAdobepremierepro className='text-3xl text-cyan-400' />
+            <SiAdobepremierepro className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiBlender className='text-3xl text-cyan-400' />
+            <SiBlender className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiAutodeskmaya className='text-3xl text-cyan-400' />
+            <SiAutodeskmaya className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiAudacity className='text-3xl text-cyan-400' />
+            <SiAudacity className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <CgFigma className='text-3xl text-cyan-400' />
+            <CgFigma className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <RiFlutterFill className='text-3xl text-cyan-400' />
+            <RiFlutterFill className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiJira className='text-3xl text-cyan-400' />
+            <SiJira className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <RiNotionFill className='text-3xl text-cyan-400' />
+            <RiNotionFill className='text-3xl text-red-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaTrello className='text-3xl text-cyan-400' />
+            <FaTrello className='text-3xl text-red-700' />
         </motion.div>
       </div>
 
