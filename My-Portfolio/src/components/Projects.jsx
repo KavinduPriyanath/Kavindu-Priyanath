@@ -21,7 +21,7 @@ function Projects() {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 mt-40 mb-20">
       <Display 
         media={selectedMedia}  
         title={selectedMedia.title}

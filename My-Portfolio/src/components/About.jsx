@@ -2,10 +2,11 @@ import React from 'react'
 import aboutImg from "../assets/About.jpeg"
 import { ABOUT_TEXT } from '../constants'
 import { motion } from 'framer-motion'
+import { FaLinkedin } from "react-icons/fa6";
 
 function About() {
   return (
-    <div className='my-8 pb-4 flex justify-center'>
+    <div className='pb-4 flex justify-center'>
       <div className="flex flex-wrap w-full lg:w-4/5"> {/* Centers the entire component */}
         <motion.div 
           whileInView={{opacity:1, x:0}}
@@ -22,6 +23,13 @@ function About() {
           <div className="flex justify-center lg:justify-start">
             <p className='my-2 max-w-xl text-gray-600 py-6 text-justify'>{ABOUT_TEXT}</p> {/* About text justified */}
           </div>
+          {/* Email Button */}
+          <div className="flex justify-center lg:justify-start mt-2">
+              <button className='flex bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow hover:bg-blue-400 inline-block'>
+                <FaLinkedin className="mr-2 text-2xl" />
+                <span>Let's Connect</span>
+              </button>
+            </div>
         </div>
       </div>
     </div>
