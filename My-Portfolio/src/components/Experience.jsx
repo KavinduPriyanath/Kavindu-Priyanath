@@ -26,8 +26,8 @@ function Experience() {
               transition={{duration:1}}
               className="w-full max-w-xl lg:w-3/4">
               <h6 className='text-black mb-2 font-semibold'>
-                {experience.role} - {" "}
-                <span className='text-black text-sm text-purple-100'>
+                {experience.role} {" "}
+                <span className='text-black text-sm text-blacl-100'>
                   {experience.company}
                 </span>
               </h6>

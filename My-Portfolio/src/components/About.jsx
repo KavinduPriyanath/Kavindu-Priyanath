@@ -25,10 +25,12 @@ function About() {
           </div>
           {/* Email Button */}
           <div className="flex justify-center lg:justify-start mt-2">
-              <button className='flex bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow hover:bg-blue-400 inline-block'>
+            <a href="https://www.linkedin.com/in/kavindu-priyanath/" target='_blank'>
+            <button className='flex bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow hover:bg-blue-400 inline-block'>
                 <FaLinkedin className="mr-2 text-2xl" />
                 <span>Let's Connect</span>
               </button>
+            </a>
             </div>
         </div>
       </div>

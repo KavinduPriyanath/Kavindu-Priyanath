@@ -9,6 +9,7 @@ function Projects() {
     src: GAMES[0].link,
     title: GAMES[0].title,
     description: GAMES[0].description,
+    page: GAMES[0].game
   });
 
   const handleImageClick = (media) => {
@@ -17,6 +18,7 @@ function Projects() {
       src: media.link,
       title: media.title,
       description: media.description,
+      page: media.game
     });
   };
 
@@ -26,6 +28,7 @@ function Projects() {
         media={selectedMedia}  
         title={selectedMedia.title}
         description={selectedMedia.description}
+        page={selectedMedia.page}
       />
       <ImageList 
         images={GAMES} 
