@@ -25,30 +25,32 @@ function Services({togglePopup}) {
               <span>Send an Email</span>
             </button>
           </div>
-        <div>
-            {PROJECTS.map((project, index) => (
-                <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
-                    <motion.div
-                        whileInView={{opacity:1, x:0}}
-                        initial={{opacity:0, x:-100}}
-                        transition={{duration: 0.5}}
-                        className='w-full lg:w-1/4'>
-                        <img src={project.image} width={225} height={225} alt={project.title} className='mb-6 rounded' />
-                    </motion.div>
-                    <div className='w-full max-w-xl lg:w-3/4'>
-                        <h6 className='mb-2 font-bold text-black'>{project.title}</h6>
-                        <p className='mb-4 text-gray-600'>{project.description}</p>
-                        <ul className='list-disc list-inside text-gray-600'>
-                        {project.offers.map((offer, index) => (
-                            <li key={index} className='list-disc list-inside text-gray-500'>
-                                {offer}
-                            </li>
-                        ))}
-                        </ul>
-                    </div>
-                </div>
+          <div>
+    {PROJECTS.map((project, index) => (
+      <div key={index} className="mb-8 flex flex-wrap lg:flex-nowrap lg:justify-center">
+        <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+          className="w-full lg:w-1/6 lg:mr-4">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="mb-6 w-full lg:w-auto rounded"
+          />
+        </motion.div>
+        <div className="w-full max-w-xl lg:w-3/4">
+          <h6 className="mb-2 font-bold text-black text-2xl">{project.title}</h6>
+          <p className="mb-4 text-gray-600">{project.description}</p>
+          <ul className="list-disc list-inside text-gray-600">
+            {project.offers.map((offer, index) => (
+              <li key={index} className="text-gray-500">{offer}</li>
             ))}
+          </ul>
         </div>
+      </div>
+    ))}
+  </div>
       </div>
     </div>
   )

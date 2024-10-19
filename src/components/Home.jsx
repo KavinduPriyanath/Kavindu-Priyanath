@@ -56,7 +56,7 @@ function Home() {
       {/* Popup Window */}
       {isPopupOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg relative w-96">
+          <div className="bg-sky-50 p-6 rounded-lg relative w-96">
             <button
               className="absolute top-2 right-2 text-black hover:text-red-500"
               onClick={togglePopup}

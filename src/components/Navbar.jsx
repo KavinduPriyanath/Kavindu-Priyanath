@@ -49,7 +49,7 @@ function Navbar({ togglePopup, notification }) {
                         <h2 className="text-black hover:text-blue-600">Blog</h2>
                     </a>
                     <button onClick={togglePopup} className="px-4 py-2 bg-blue-500 text-white rounded-lg">
-                        <h2 className="text-black hover:text-blue-600">Contact</h2>
+                        <h2 className="text-black hover:text-white">Contact</h2>
                     </button>
                 </div>
 

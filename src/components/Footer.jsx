@@ -1,12 +1,11 @@
 import React from 'react';
 import { FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 function Footer({togglePopup}) {
   return (
-    <footer className="w-full bg-gray-900 text-white py-8">
+    <footer className="w-full bg-gray-900 text-white pb-2 pt-4">
       {/* First Row - Social Media Links */}
-      <div className="flex justify-center space-x-6 mb-6">
+      <div className="flex justify-center space-x-6 mb-4">
         <a href="https://www.linkedin.com/in/kavindu-priyanath/" target="_blank" rel="noopener" className="text-2xl hover:text-blue-500">
           <FaLinkedin />
         </a>
@@ -19,11 +18,11 @@ function Footer({togglePopup}) {
       </div>
 
       {/* Second Row - Navigation Links */}
-      <div className="flex justify-center space-x-6 mb-6">
-        <a href="/" className="hover:text-gray-400">Home</a>
-        <a href="/projects" className="hover:text-gray-400">Projects</a>
-        <a href="/services" className="hover:text-gray-400">Services</a>
-        <a onClick={togglePopup} className="hover:text-gray-400">Contact</a>
+      <div className="flex justify-center space-x-6 mb-2">
+        <a href="/" className="hover:text-blue-400">Home</a>
+        <a href="/projects" className="hover:text-blue-400">Projects</a>
+        <a href="/services" className="hover:text-blue-400">Services</a>
+        <a onClick={togglePopup} className="hover:text-blue-400">Contact</a>
       </div>
 
       {/* Third Row - Copyright Text */}

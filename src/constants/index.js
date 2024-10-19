@@ -79,14 +79,15 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Tool Development",
+    title: "Software Development",
     image: ToolDevelopment,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     offers: [
-      "Design tools to streamline pipeline from Blender to game engine",
-      "Write Python scripts to automate repetitive tasks",
-      "Custom editor scripts, and inspectors for Unity",
+      "Cross platform custom software solutions",
+      "Well structured, modular maintainable code",
+      "API development and seamless integration",
+      "User-Centric UI/UX Design",
     ],
   },
   {
@@ -119,10 +120,10 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     offers: [
-      "Fully detailed game design document",
-      "Unity, UE5, Godot, GDevelop and Phaser expertise",
-      "Well structured code base with optmized performance",
-      "Free playtesting sessions"
+      "Functional Testing",
+      "Performance Testing",
+      "Usability and Playability Testing",
+      "Detailed report containing all test-cases"
     ],
   },
 ];
@@ -213,5 +214,91 @@ export const GAMES = [
     game: "https://kavigames.itch.io/skyprison",
     description:
       "This is my first game I completed and published and it was made for Blackthornprod's first ever gamejam under the theme of 'Less is More'.",
+  },
+];
+
+
+export const SOFTWARE = [
+  {
+    title: "Portfolio",
+    image: Meta11,
+    github: "https://github.com/KavinduPriyanath/Kavindu-Priyanath",
+    tags: [
+      "ReactJs",
+      "Tailwind CSS",
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+  },
+  {
+    title: "Algorithmia Client Portal",
+    image: Meta11,
+    github: "https://github.com/Algorithmia-3rd-Year-Project/algorithmia-client",
+    tags: [
+      "MERN",
+      "Bootstrap",
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+  },
+  {
+    title: "IndieAbode",
+    image: Meta11,
+    github: "https://github.com/KavinduPriyanath/indieabode",
+    tags: [
+      "PHP",
+      "SQL",
+      "JQuery",
+      "JS"
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+  },
+  {
+    title: "Paimon's Gossips",
+    image: Meta11,
+    github: "https://github.com/KavinduPriyanath/Real-Time-Chat-Rooms-",
+    tags: [
+      "NodeJs",
+      "Express",
+      "Socket.io",
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+  },
+  {
+    title: "MadHack 2.0 Final",
+    image: Meta11,
+    github: "https://github.com/KavinduPriyanath/team7",
+    tags: [
+      "Flutter",
+      "Dart",
+      "Firebase"
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+  },
+  {
+    title: "Assembly Quiz Game",
+    image: Meta11,
+    github: "https://github.com/KavinduPriyanath/x64-Assembly-Quiz-Game",
+    tags: [
+      "Assembly",
+      "nasm x64",
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+  },
+  {
+    title: "Campus Bot",
+    image: Meta11,
+    github: "https://github.com/KavinduPriyanath/Campus-Bot",
+    tags: [
+      "Python",
+      "Selenium",
+      "PyQt5"
+    ],
+    description:
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
   },
 ];

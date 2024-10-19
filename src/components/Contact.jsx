@@ -45,6 +45,7 @@ function Contact({ isOpen, onClose, onEmailSent }) {
             <input 
               type="text" 
               name="from_name" 
+              placeholder='who are you?'
               className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               required
             />
@@ -56,6 +57,7 @@ function Contact({ isOpen, onClose, onEmailSent }) {
             <input 
               type="email" 
               name="from_email" 
+              placeholder="what's your email?"
               className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               required
             />
@@ -67,6 +69,7 @@ function Contact({ isOpen, onClose, onEmailSent }) {
             <input 
               type="text" 
               name="subject" 
+              placeholder="what is this about?"
               className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               required
             />
@@ -77,6 +80,7 @@ function Contact({ isOpen, onClose, onEmailSent }) {
             <label htmlFor="content" className="block text-gray-700 font-bold">Content</label>
             <textarea 
               name="message" 
+              placeholder='Tell me more...'
               className="w-full p-2 border border-black rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-400" 
               rows="4"
               required

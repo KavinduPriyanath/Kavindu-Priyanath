@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import circle from '../../../assets/tictactoe/circle.png';
 import cross from '../../../assets/tictactoe/cross.png';
+import profilePic from "../../../assets/Kavindu.jpg";// Add Kavindu's profile photo
 
 function Tictactoe() {
   const [board, setBoard] = useState(Array(9).fill(null)); // Game board state
@@ -57,7 +58,27 @@ function Tictactoe() {
   }, [isPlayerTurn, board]);
 
   const winner = calculateWinner(board);
-  const status = winner ? `Winner: ${winner}` : `Next Player: ${isPlayerTurn ? 'X (Player)' : 'O (Computer)'}`;
+
+  // Update status messages based on game state
+  let status = 'Hi, let\'s play a game'; // Default message when game hasn't started
+  if (winner) {
+    if (winner === 'X') {
+      status = '"Damn it. GG!!!"'; // If X wins
+    } else if (winner === 'O') {
+      status = '"Oh yeahh! I won!!!"'; // If O wins
+    }
+  } else if (board.every(square => square === null)) {
+    status = '"Hi, let\'s play a game"'; // No one has played yet
+  } else {
+    status = `${isPlayerTurn ? '"It\'s your turn"' : '"Here I go"'}`; // Ongoing game
+  }
+
+  let resetText = 'Reset';
+  if (winner && winner === 'X') {
+    resetText = 'Up for Another round? 😞'
+  } else if (winner && winner === 'O') {
+    resetText = 'Up for Another round? 😃'
+  }
 
   const renderSquare = (index) => (
     <button
@@ -76,15 +97,23 @@ function Tictactoe() {
 
   return (
     <div className="flex flex-col items-center justify-center mt-8">
-      <div className="text-2xl mb-4">{status}</div>
-      <div className="grid grid-cols-3 gap-2">
+      {/* Status Message with Profile Image */}
+      <div className="flex items-center text-2xl mb-4 text-black">
+        <img src={profilePic} alt="Kavindu" className="w-10 h-10 rounded-full mr-4" /> {/* Profile photo */}
+        {status}
+      </div>
+
+      {/* Tic-Tac-Toe Board */}
+      <div className="grid grid-cols-3 gap-2 ">
         {board.map((_, i) => renderSquare(i))}
       </div>
+
+      {/* Reset Button */}
       <button
         className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
         onClick={resetGame}
       >
-        Reset Game
+        {resetText}
       </button>
     </div>
   );

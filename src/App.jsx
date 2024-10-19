@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import PongGame from './components/PongGame';
 import TwoDView from './components/2dView/TwoDView';
 import Tictactoe from './components/Games/TikTakToe/Tictactoe';
+import Software from './components/Software';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
             <Route path='/' element={<Home togglePopup={togglePopup}/>} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/services' element={<Services togglePopup={togglePopup} />} />
+            <Route path='/software' element={<Software />} />
           </Routes>
         
         </BrowserRouter>
