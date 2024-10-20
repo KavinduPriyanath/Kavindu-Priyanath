@@ -24,7 +24,7 @@ import FalseReality from "../assets/games/FalseReality.png"
 import SkyPrison from "../assets/games/SkyPrison.png"
 
 //import software icons
-import Portfolio from "../assets/software/portfolio.PNG";
+import Portfolio from "../assets/software/portfolio.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
