@@ -6,13 +6,13 @@ import Experience from './Experience';
 import Tictactoe from './Games/TikTakToe/Tictactoe';
 import { GiTicTacToe } from "react-icons/gi";
 
-function Home() {
+function Home({togglePopup}) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const experienceRef = useRef(null);
 
   // Toggle the popup window
-  const togglePopup = () => {
+  const toggleGame = () => {
     setIsPopupOpen(!isPopupOpen);
   };
 
@@ -47,7 +47,7 @@ function Home() {
       {showButton && (
         <button
           className="fixed bottom-4 right-4 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all"
-          onClick={togglePopup}
+          onClick={toggleGame}
         >
           <GiTicTacToe className='text-[25px]'/>
         </button>
@@ -59,7 +59,7 @@ function Home() {
           <div className="bg-sky-50 p-6 rounded-lg relative w-96">
             <button
               className="absolute top-2 right-2 text-black hover:text-red-500"
-              onClick={togglePopup}
+              onClick={toggleGame}
             >
               ✖
             </button>

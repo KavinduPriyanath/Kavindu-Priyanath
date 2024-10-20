@@ -23,6 +23,9 @@ import TwoSwords from "../assets/games/TwoSwords.png"
 import FalseReality from "../assets/games/FalseReality.png"
 import SkyPrison from "../assets/games/SkyPrison.png"
 
+//import software icons
+import Portfolio from "../assets/software/portfolio.PNG";
+
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
 export const ABOUT_TEXT = `I am a passionate Software Engineer with a strong interest in game development and a drive to create immersive gaming experiences. I am knowledgeable in, game designing, game programming, machine learning, data analytics, game monetisation, user acquisition and constantly exploring emerging technologies and staying updated on the latest trends in the gaming world.`;
@@ -221,7 +224,7 @@ export const GAMES = [
 export const SOFTWARE = [
   {
     title: "Portfolio",
-    image: Meta11,
+    image: Portfolio,
     github: "https://github.com/KavinduPriyanath/Kavindu-Priyanath",
     tags: [
       "ReactJs",

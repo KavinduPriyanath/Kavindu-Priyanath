@@ -3,6 +3,7 @@ import ImageList from './ImageList';
 import Display from './Display';
 import { GAMES } from '../constants';
 import Software from './Software';
+import Showreel from './Showreel';
 
 function Projects() {
   // State to manage selected tab ('games' or 'software')
@@ -56,7 +57,9 @@ function Projects() {
           <ImageList 
             images={GAMES} 
             onImageClick={handleImageClick} 
+            selectedMedia={selectedMedia}
           />
+          <Showreel />
         </div>
       ) : (
         <Software />
