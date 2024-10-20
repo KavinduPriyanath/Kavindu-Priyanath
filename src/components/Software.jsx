@@ -21,7 +21,7 @@ const Software = () => {
           />
 
           {/* Description */}
-          <p className="text-gray-700 text-base mb-4">{software.description}</p>
+          <p className="text-gray-700 text-justify text-base mb-4">{software.description}</p>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-4">

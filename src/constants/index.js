@@ -25,6 +25,12 @@ import SkyPrison from "../assets/games/SkyPrison.png"
 
 //import software icons
 import Portfolio from "../assets/software/portfolio.png";
+import IndieAbode from "../assets/software/indieabode.png";
+import Paimon from "../assets/software/paimon.png";
+import AlgorithmiaClient from "../assets/software/algorithmia.png";
+import MadHack from "../assets/software/madhack.png";
+import Assembly from "../assets/software/assembly.png";
+import CampusBot from "../assets/software/campusbot.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -62,7 +68,7 @@ export const PROJECTS = [
     title: "Game Development",
     image: GameDevelopment,
     description:
-      "Full cycle development services with concept to deployment, making high-quality, engaging games for mobile, web and desktop platforms",
+      "End to end game development services with concept to deployment, making high-quality, engaging games for mobile, web and desktop platforms",
     offers: [
       "Fully detailed game design document",
       "Unity, UE5, Godot, GDevelop and Phaser expertise",
@@ -74,18 +80,19 @@ export const PROJECTS = [
     title: "Game Design",
     image: GameDesign,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      "Creative game design services, focusing on engaging gameplay, level design, monetization and player experience",
     offers: [
-      "Crafting narratives and game mechanics",
+      "Fully details documentation and diagrams",
       "Designing fully functional game economies",
-      "Progression systems, Reward systems"
+      "Progression systems, Reward systems",
+      "Identifying UA channels"
     ],
   },
   {
     title: "Software Development",
     image: ToolDevelopment,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+      "Custom software development services, tailored to meet business needs with efficient scalable solutions",
     offers: [
       "Cross platform custom software solutions",
       "Well structured, modular maintainable code",
@@ -93,42 +100,42 @@ export const PROJECTS = [
       "User-Centric UI/UX Design",
     ],
   },
-  {
-    title: "Interactive Applications",
-    image: InteractiveApp,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    offers: [
-      "Fully detailed game design document",
-      "Unity, UE5, Godot, GDevelop and Phaser expertise",
-      "Well structured code base with optmized performance",
-      "Free playtesting sessions"
-    ],
-  },
-  {
-    title: "Game Data Analysis",
-    image: GameData,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    offers: [
-      "Fully detailed game design document",
-      "Unity, UE5, Godot, GDevelop and Phaser expertise",
-      "Well structured code base with optmized performance",
-      "Free playtesting sessions"
-    ],
-  },
-  {
-    title: "Game QA and Playtesting",
-    image: GameQA,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    offers: [
-      "Functional Testing",
-      "Performance Testing",
-      "Usability and Playability Testing",
-      "Detailed report containing all test-cases"
-    ],
-  },
+  // {
+  //   title: "Interactive Applications",
+  //   image: InteractiveApp,
+  //   description:
+  //     "A personal portfolio website showcasing projects, skills, and contact information.",
+  //   offers: [
+  //     "Fully detailed game design document",
+  //     "Unity, UE5, Godot, GDevelop and Phaser expertise",
+  //     "Well structured code base with optmized performance",
+  //     "Free playtesting sessions"
+  //   ],
+  // },
+  // {
+  //   title: "Game Data Analysis",
+  //   image: GameData,
+  //   description:
+  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+  //   offers: [
+  //     "Fully detailed game design document",
+  //     "Unity, UE5, Godot, GDevelop and Phaser expertise",
+  //     "Well structured code base with optmized performance",
+  //     "Free playtesting sessions"
+  //   ],
+  // },
+  // {
+  //   title: "Game QA and Playtesting",
+  //   image: GameQA,
+  //   description:
+  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+  //   offers: [
+  //     "Functional Testing",
+  //     "Performance Testing",
+  //     "Usability and Playability Testing",
+  //     "Detailed report containing all test-cases"
+  //   ],
+  // },
 ];
 
 export const CONTACT = {
@@ -141,7 +148,7 @@ export const GAMES = [
   {
     title: "Meta 11 - Fantasy Cricket Game",
     image: Meta11,
-    link: "https://youtu.be/0VlOiQCyMzk",
+    link: "https://www.youtube.com/embed/9Xamswpa5Sg",
     game: "https://meta11.com/",
     description:
       "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete. I joined the company behind Meta11, Behaviol as an intern and then promoted to an Associate Unity3D Engineer.",
@@ -189,7 +196,7 @@ export const GAMES = [
   {
     title: "VIM Command Tunnel",
     image: VIMCommandTunnel,
-    link: "https://youtu.be/0VlOiQCyMzk",
+    link: "https://www.youtube.com/embed/xS-453FJ_R4",
     game: "https://kavigames.itch.io/vim-command-tunnel",
     description:
       "This is a game made for practicing VIM editor commands in a fun and interactive way. As a student, I had hard time memorizing the Vim Editor commands so I thought to make a game to practice myself.",
@@ -197,7 +204,7 @@ export const GAMES = [
   {
     title: "Two Swords",
     image: TwoSwords,
-    link: "https://www.youtube.com/embed/0VlOiQCyMzk",
+    link: "",
     game: "https://kavigames.itch.io/two-swords",
     description:
       "This is a game made for GMTK GameJam 2021 in 48 hours unders the theme of 'Joined Together'. Even though I managed to complete the game before the deadline, could not submit the game to the jam due to poor internet connection.",
@@ -231,22 +238,22 @@ export const SOFTWARE = [
       "Tailwind CSS",
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "My portfolio site containing work experience, projects and other what-not about me",
   },
   {
     title: "Algorithmia Client Portal",
-    image: Meta11,
+    image: AlgorithmiaClient,
     github: "https://github.com/Algorithmia-3rd-Year-Project/algorithmia-client",
     tags: [
       "MERN",
       "Bootstrap",
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "A Web portal for advertisers to interact with 'Algorithmia' game in real time",
   },
   {
     title: "IndieAbode",
-    image: Meta11,
+    image: IndieAbode,
     github: "https://github.com/KavinduPriyanath/indieabode",
     tags: [
       "PHP",
@@ -255,11 +262,11 @@ export const SOFTWARE = [
       "JS"
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "A fully functional game site with tools for gamers, publishers and developers alike",
   },
   {
     title: "Paimon's Gossips",
-    image: Meta11,
+    image: Paimon,
     github: "https://github.com/KavinduPriyanath/Real-Time-Chat-Rooms-",
     tags: [
       "NodeJs",
@@ -267,11 +274,11 @@ export const SOFTWARE = [
       "Socket.io",
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "A simple region based chatroom inspired by Genshin Impact game's content",
   },
   {
     title: "MadHack 2.0 Final",
-    image: Meta11,
+    image: MadHack,
     github: "https://github.com/KavinduPriyanath/team7",
     tags: [
       "Flutter",
@@ -279,22 +286,22 @@ export const SOFTWARE = [
       "Firebase"
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "A mobile application made for MadHack 2.0 final round under 24 hours",
   },
   {
     title: "Assembly Quiz Game",
-    image: Meta11,
+    image: Assembly,
     github: "https://github.com/KavinduPriyanath/x64-Assembly-Quiz-Game",
     tags: [
       "Assembly",
       "nasm x64",
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "A simple quiz game written in Assembly language on Kali Linux using nasm x64",
   },
   {
     title: "Campus Bot",
-    image: Meta11,
+    image: CampusBot,
     github: "https://github.com/KavinduPriyanath/Campus-Bot",
     tags: [
       "Python",
@@ -302,6 +309,6 @@ export const SOFTWARE = [
       "PyQt5"
     ],
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete.",
+      "A simple bot for checking VLE, marking attendance and checking deadlines",
   },
 ];

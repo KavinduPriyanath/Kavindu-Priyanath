@@ -14,13 +14,13 @@ function Services({togglePopup}) {
           <div className="flex justify-center space-x-4 mb-20">
             {/* Upwork Button */}
             <a href='https://www.upwork.com/freelancers/~016534ca3acaa0bf22?mp_source=share' target='_blank'>
-            <button className="flex items-center px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all">
+            <button className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-400 transition-all">
               <FaSquareUpwork className="mr-2 text-2xl" />
               <span>Hire me on Upwork</span>
             </button></a>
 
             {/* Email Button */}
-            <button onClick={togglePopup} className="flex items-center px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all">
+            <button onClick={togglePopup} className="flex items-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-400 transition-all">
               <MdEmail className="mr-2 text-2xl" />
               <span>Send an Email</span>
             </button>

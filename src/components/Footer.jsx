@@ -12,7 +12,7 @@ function Footer({togglePopup}) {
         <a href="https://www.youtube.com/watch?v=0VlOiQCyMzk&feature=youtu.be" target="_blank" rel="noopener" className="text-2xl hover:text-red-500">
           <FaYoutube />
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener" className="text-2xl hover:text-blue-400">
+        <a href="https://x.com/7_prend" target="_blank" rel="noopener" className="text-2xl hover:text-blue-400">
           <FaTwitter />
         </a>
       </div>
