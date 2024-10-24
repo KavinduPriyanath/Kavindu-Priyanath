@@ -42,7 +42,7 @@ export const EXPERIENCES = [
     role: "Associate Unity3D Engineer",
     company: "- Behaviol (Pty) Ltd",
     description: `Designed and developed a fully dynamic, real-time AI commentary system for Meta11 fantasy Cricket Game using ElevenLabs and OpenAI APIs. Created Python GUI app to handle commentary templates and multiple python scripts to automate cleaning and recording tasks. Implemented an in-game event tracking system, and designed an algorithm for creating highlights from video recording of games. Integrated responsive UIs and designed a custom console for Unity Engine with filtering capabilities. Worked on tasks related to Physics System , Camera Updates and also gained a huge understanding about iGaming and Web3 gaming space.`,
-    trivia: "Meta-11 project got shutdown... 😢",
+    trivia: "Got laid off due to the shutdown of Meta-11 developments... 😢",
     technologies: ["Unity", "C#", "OpenAI API", "Python", "PyQt5", "ElevenLabsAPI"],
   },
   {
