@@ -24,6 +24,7 @@ import FalseReality from "../assets/games/FalseReality.png"
 import SkyPrison from "../assets/games/SkyPrison.png"
 
 //import software icons
+import NotAGameDev from "../assets/software/notagamedev.png";
 import Portfolio from "../assets/software/portfolio.png";
 import IndieAbode from "../assets/software/indieabode.png";
 import Paimon from "../assets/software/paimon.png";
@@ -230,15 +231,29 @@ export const GAMES = [
 
 export const SOFTWARE = [
   {
+    title: "Not A GameDev",
+    image: NotAGameDev,
+    github: "https://github.com/KavinduPriyanath/Kavindu-Priyanath",
+    tags: [
+      "NextJS",
+      "Tailwind",
+      "MongoDB"
+    ],
+    description:
+      "An idea warehouse for people to tell their game ideas for others to design either for free or a price",
+    released: false
+  },
+  {
     title: "Portfolio",
     image: Portfolio,
     github: "https://github.com/KavinduPriyanath/Kavindu-Priyanath",
     tags: [
       "ReactJs",
-      "Tailwind CSS",
+      "Tailwind",
     ],
     description:
       "My portfolio site containing work experience, projects and other what-not about me",
+    released: true
   },
   {
     title: "Algorithmia Client Portal",
@@ -247,9 +262,11 @@ export const SOFTWARE = [
     tags: [
       "MERN",
       "Bootstrap",
+      "PayHere"
     ],
     description:
       "A Web portal for advertisers to interact with 'Algorithmia' game in real time",
+    released: true
   },
   {
     title: "IndieAbode",
@@ -263,6 +280,7 @@ export const SOFTWARE = [
     ],
     description:
       "A fully functional game site with tools for gamers, publishers and developers alike",
+    released: true
   },
   {
     title: "Paimon's Gossips",
@@ -275,6 +293,7 @@ export const SOFTWARE = [
     ],
     description:
       "A simple region based chatroom inspired by Genshin Impact game's content",
+    released: true
   },
   {
     title: "MadHack 2.0 Final",
@@ -287,6 +306,7 @@ export const SOFTWARE = [
     ],
     description:
       "A mobile application made for MadHack 2.0 final round under 24 hours",
+    released: true
   },
   {
     title: "Assembly Quiz Game",
@@ -298,6 +318,7 @@ export const SOFTWARE = [
     ],
     description:
       "A simple quiz game written in Assembly language on Kali Linux using nasm x64",
+    released: true
   },
   {
     title: "Campus Bot",
@@ -310,5 +331,6 @@ export const SOFTWARE = [
     ],
     description:
       "A simple bot for checking VLE, marking attendance and checking deadlines",
+    released: true
   },
 ];

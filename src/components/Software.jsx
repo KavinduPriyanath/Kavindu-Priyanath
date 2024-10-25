@@ -35,15 +35,19 @@ const Software = () => {
             ))}
           </div>
 
-          {/* GitHub Button */}
-          <a
-            href={software.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex inline-block text-center text-black py-2 pl-2 rounded hover:text-blue-600"
-          >
-            <span className='mr-1'>View on GitHub </span> <FiExternalLink className='mt-1' />
-          </a>
+          {/* GitHub Button or Coming Soon */}
+          {software.released ? (
+            <a
+              href={software.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex inline-block text-center text-black py-2 pl-2 rounded hover:text-blue-600"
+            >
+              <span className='mr-1'>View on GitHub</span> <FiExternalLink className='mt-1' />
+            </a>
+          ) : (
+            <p className="text-gray-500 text-center py-2">Coming soon...</p>
+          )}
         </div>
       ))}
     </div>
