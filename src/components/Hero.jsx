@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import profilePic from "../assets/Kavindu.jpg";
 import { motion } from 'framer-motion';
 import Tooltip from './Tooltip';
+import Notification from './Notification';
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -10,17 +11,35 @@ const container = (delay) => ({
 
 function Hero({ togglePopup }) {
     const [tooltip, setTooltip] = useState({ text: '', position: { top: 0, left: 0 } });
+    const [notification, setNotification] = useState(null);
+    const notificationTimeout = useRef(null);
 
     const showTooltip = (text, event, positionType = 'bottom-left') => {
         const rect = event.target.getBoundingClientRect();
         const position = positionType === 'bottom-right' 
-            ? { top: rect.bottom + window.scrollY + 10, left: rect.right + window.scrollX - 180 } // adjust -80 for tooltip width
+            ? { top: rect.bottom + window.scrollY + 10, left: rect.right + window.scrollX - 180 }
             : { top: rect.bottom + window.scrollY + 10, left: rect.left + window.scrollX };
 
         setTooltip({ text, position });
     };
 
     const hideTooltip = () => setTooltip({ text: '', position: { top: 0, left: 0 } });
+
+    const addNotification = (message) => {
+        // Clear the previous timeout if it exists
+        if (notificationTimeout.current) {
+            clearTimeout(notificationTimeout.current);
+        }
+    
+        // Set the latest notification
+        setNotification(message);
+    
+        // Set a new timeout to remove the notification after 2 seconds
+        notificationTimeout.current = setTimeout(() => {
+            setNotification(null);
+            notificationTimeout.current = null;
+        }, 2000);
+    };
 
     return (
         <div className='flex-grow min-h-screen flex flex-col items-center justify-center'>
@@ -56,6 +75,7 @@ function Hero({ togglePopup }) {
                         className='hover:text-blue-500'
                         onMouseEnter={(e) => showTooltip("Click to download Game CV", e)}
                         onMouseLeave={hideTooltip}
+                        onClick={() => addNotification("Downloading Game CV")}
                     >
                         <a href="https://drive.google.com/uc?export=download&id=1sLuiIl0EsV-VK7hf6cH8UIAz5SGotdS-" download>
                             Game Engineer
@@ -66,6 +86,7 @@ function Hero({ togglePopup }) {
                         className='hover:text-blue-500'
                         onMouseEnter={(e) => showTooltip("Click to download Software CV", e, 'bottom-right')}
                         onMouseLeave={hideTooltip}
+                        onClick={() => addNotification("Downloading Software CV")}
                     >
                         <a href="https://drive.google.com/uc?export=download&id=1yOLF3djLuW_3x2fCdhmIcCDN1LbtLdui" download>
                             Software Engineer
@@ -91,6 +112,12 @@ function Hero({ togglePopup }) {
 
             {/* Render Tooltip */}
             {tooltip.text && <Tooltip text={tooltip.text} position={tooltip.position} />}
+
+            {notification && (
+                <div className="fixed top-4 right-4 z-50">
+                    <Notification message={notification} onRemove={() => setNotification(null)} />
+                </div>
+            )}
         </div>
     );
 }

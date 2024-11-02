@@ -6,6 +6,7 @@ import Experience from './Experience';
 import Tictactoe from './Games/TikTakToe/Tictactoe';
 import { GiTicTacToe } from "react-icons/gi";
 import Accordion from './Accordian';
+import AboutMore from './AboutMore';
 
 function Home({togglePopup}) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -43,6 +44,7 @@ function Home({togglePopup}) {
         <Experience />
       </div>
       <Technologies />
+      <AboutMore />
       {/* <Accordion /> */}
 
       {/* Button to open Tic-Tac-Toe popup, only visible after scrolling past Experience */}
