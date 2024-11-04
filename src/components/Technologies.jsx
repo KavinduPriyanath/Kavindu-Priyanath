@@ -28,6 +28,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandThreejs } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill } from "react-icons/ri";
 
 //Version Controlling
 import { FaBitbucket } from "react-icons/fa";
@@ -194,6 +195,13 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiMongodb className='text-3xl text-green-700' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <RiNextjsFill className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
