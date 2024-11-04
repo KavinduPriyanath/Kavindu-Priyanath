@@ -3,6 +3,7 @@ import profilePic from "../assets/Kavindu.jpg";
 import { motion } from 'framer-motion';
 import Tooltip from './Tooltip';
 import Notification from './Notification';
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
@@ -26,19 +27,14 @@ function Hero({ togglePopup }) {
     const hideTooltip = () => setTooltip({ text: '', position: { top: 0, left: 0 } });
 
     const addNotification = (message) => {
-        // Clear the previous timeout if it exists
         if (notificationTimeout.current) {
             clearTimeout(notificationTimeout.current);
         }
-    
-        // Set the latest notification
         setNotification(message);
-    
-        // Set a new timeout to remove the notification after 2 seconds
         notificationTimeout.current = setTimeout(() => {
             setNotification(null);
             notificationTimeout.current = null;
-        }, 2000);
+        }, 4000);
     };
 
     return (
@@ -73,33 +69,29 @@ function Hero({ togglePopup }) {
                 >
                     <span
                         className='hover:text-blue-500'
-                        onMouseEnter={(e) => showTooltip("Click to download Game CV", e)}
-                        onMouseLeave={hideTooltip}
-                        onClick={() => addNotification("Downloading Game CV")}
+                        // onMouseEnter={(e) => showTooltip("Click to download Software CV", e, 'bottom-right')}
+                        // onMouseLeave={hideTooltip}
+                        // onClick={() => addNotification("Downloading Software CV")}
                     >
-                        <a href="https://drive.google.com/uc?export=download&id=1sLuiIl0EsV-VK7hf6cH8UIAz5SGotdS-" download>
-                            Game Engineer
-                        </a>
+                        Software Engineer
                     </span>
                     <span>. </span>
                     <span
                         className='hover:text-blue-500'
-                        onMouseEnter={(e) => showTooltip("Click to download Software CV", e, 'bottom-right')}
-                        onMouseLeave={hideTooltip}
-                        onClick={() => addNotification("Downloading Software CV")}
+                        // onMouseEnter={(e) => showTooltip("Click to download Game CV", e)}
+                        // onMouseLeave={hideTooltip}
+                        // onClick={() => addNotification("Downloading Game CV")}
                     >
-                        <a href="https://drive.google.com/uc?export=download&id=1yOLF3djLuW_3x2fCdhmIcCDN1LbtLdui" download>
-                            Software Engineer
-                        </a>
+                        Game Engineer
                     </span>
                 </motion.span>
 
-                {/* Centered Get in Touch Button */}
+                {/* Centered Buttons: Get in Touch and Download Resume */}
                 <motion.div
                     variants={container(1)}
                     initial="hidden"
                     animate="visible"
-                    className="mt-3"
+                    className="mt-3 flex space-x-4"
                 >
                     <button
                         onClick={togglePopup}
@@ -107,6 +99,17 @@ function Hero({ togglePopup }) {
                     >
                         Get in Touch
                     </button>
+                    <a href="https://drive.google.com/uc?export=download&id=16H48Z4TTEsVoCuZjlUZzJko32TkwCmi9" download>
+                    <button
+                        onClick={() => addNotification("Downloading Resume")}
+                        className="bg-green-500 text-white font-bold py-3 px-6 rounded-xl shadow-md hover:bg-green-400 flex items-center space-x-2"
+                    >
+                        
+                        <FaCloudDownloadAlt  /> 
+                        <span>Resume</span>
+                        
+                    </button>
+                    </a>
                 </motion.div>
             </div>
 

@@ -14,7 +14,10 @@ import { SiJavascript } from "react-icons/si";
 import { BiLogoPhp } from "react-icons/bi";
 
 //Graphics
-import { SiOpengl } from "react-icons/si";
+//import { SiOpengl } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { AiOutlineKubernetes } from "react-icons/ai";
+
 
 //Web & Database
 import { RiReactjsLine} from 'react-icons/ri'
@@ -147,14 +150,21 @@ function Technologies() {
         variants={iconVariants(4.5)}
         initial="initial"
         animate="animate"
-        className="mt-8 mb-4 text-center text-2xl text-sky-700 font-bold">Graphics</motion.h2>
+        className="mt-8 mb-4 text-center text-2xl text-sky-700 font-bold">Cloud</motion.h2>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.div 
           variants={iconVariants(4.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiOpengl  className='text-3xl text-sky-700' />
+            <FaDocker className='text-3xl text-sky-700' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <AiOutlineKubernetes className='text-3xl text-sky-700' />
         </motion.div>
       </div>
 
