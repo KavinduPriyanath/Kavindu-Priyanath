@@ -99,7 +99,7 @@ function Hero({ togglePopup }) {
                     >
                         Get in Touch
                     </button>
-                    <a href="https://drive.google.com/uc?export=download&id=16H48Z4TTEsVoCuZjlUZzJko32TkwCmi9" download>
+                    <a href="https://drive.google.com/uc?export=download&id=1cUrxHcQh2M619chQQ3OX9RgMt8LJNjL-" download>
                     <button
                         onClick={() => addNotification("Downloading Resume")}
                         className="bg-green-500 text-white font-bold py-3 px-6 rounded-xl shadow-md hover:bg-green-400 flex items-center space-x-2"
