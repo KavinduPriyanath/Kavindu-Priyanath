@@ -24,6 +24,7 @@ import FalseReality from "../assets/games/FalseReality.png"
 import SkyPrison from "../assets/games/SkyPrison.png"
 
 //import software icons
+import TierManager from "../assets/software/tiermanager.png";
 import NotAGameDev from "../assets/software/notagamedev.png";
 import Portfolio from "../assets/software/portfolio.png";
 import IndieAbode from "../assets/software/indieabode.png";
@@ -152,7 +153,7 @@ export const GAMES = [
     link: "https://www.youtube.com/embed/9Xamswpa5Sg",
     game: "https://meta11.com/",
     description:
-      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete. I joined the company behind Meta11, Behaviol as an intern and then promoted to an Associate Unity3D Engineer.",
+      "Meta11 is a fantasy virtual cricket game where every cricketer is an AI-driven Athlete. Worked on Commentary, Cameras, Characters, Tools, UIs and MiniGames.",
   },
   {
     title: "Algorithmia - Edu-Sim Game",
@@ -231,9 +232,22 @@ export const GAMES = [
 
 export const SOFTWARE = [
   {
+    title: "Tier Manager",
+    image: TierManager,
+    github: "https://github.com/KavinduPriyanath/Kavindu-Priyanath",
+    tags: [
+      "Angular",
+      "TypeScript",
+      "Java"
+    ],
+    description:
+      "Easy Tier Management capabilities with AI generated images of games, movies and animes",
+    released: false
+  },
+  {
     title: "Not A GameDev",
     image: NotAGameDev,
-    github: "https://github.com/KavinduPriyanath/Kavindu-Priyanath",
+    github: "https://github.com/KavinduPriyanath/NotAGameDev",
     tags: [
       "NextJS",
       "Tailwind",
@@ -241,7 +255,7 @@ export const SOFTWARE = [
     ],
     description:
       "An idea warehouse for people to tell their game ideas for others to design either for free or a price",
-    released: false
+    released: true
   },
   {
     title: "Portfolio",

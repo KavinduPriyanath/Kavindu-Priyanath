@@ -12,6 +12,8 @@ import { SiCplusplus } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { BiLogoPhp } from "react-icons/bi";
+import { SiTypescript } from "react-icons/si";
+import { RiJavaLine } from "react-icons/ri";
 
 //Graphics
 //import { SiOpengl } from "react-icons/si";
@@ -29,6 +31,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandThreejs } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RiNextjsFill } from "react-icons/ri";
+import { FaAngular } from "react-icons/fa";
 
 //Version Controlling
 import { FaBitbucket } from "react-icons/fa";
@@ -107,7 +110,7 @@ function Technologies() {
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiJavascript className='text-3xl text-blue-700' />
+            <RiJavaLine className='text-3xl text-blue-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
@@ -115,6 +118,20 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
             <BiLogoPhp  className='text-3xl text-blue-700' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiTypescript className='text-3xl text-blue-700' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiJavascript className='text-3xl text-blue-700' />
         </motion.div>
       </div>
 
@@ -202,6 +219,13 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4">
             <RiNextjsFill className='text-3xl text-green-700' />
+        </motion.div>
+        <motion.div 
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaAngular className='text-3xl text-green-700' />
         </motion.div>
         <motion.div 
           variants={iconVariants(4.5)}
