@@ -25,6 +25,7 @@ import SkyPrison from "../assets/games/SkyPrison.png"
 
 //import software icons
 import TierManager from "../assets/software/tiermanager.png";
+import SLGameJobs from "../assets/software/slgamejobs.png";
 import NotAGameDev from "../assets/software/notagamedev.png";
 import Portfolio from "../assets/software/portfolio.png";
 import IndieAbode from "../assets/software/indieabode.png";
@@ -243,6 +244,19 @@ export const SOFTWARE = [
     description:
       "Easy Tier Management capabilities with AI generated images of games, movies and animes",
     released: false
+  },
+  {
+    title: "SL Game Jobs",
+    image: SLGameJobs,
+    github: "https://sl-gamejobs.vercel.app/",
+    tags: [
+      "NextJS",
+      "Tailwind",
+      "MongoDB"
+    ],
+    description:
+      "Web portal for posting and tracking all jobs related to Sri Lankan Gaming Industry",
+    released: true
   },
   {
     title: "Not A GameDev",
