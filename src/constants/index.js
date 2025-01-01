@@ -255,7 +255,7 @@ export const SOFTWARE = [
       "MongoDB"
     ],
     description:
-      "Web portal for posting and tracking all jobs related to Sri Lankan Gaming Industry",
+      "Web portal for posting and tracking all Sri Lankan gaming industry related jobs",
     released: true
   },
   {
